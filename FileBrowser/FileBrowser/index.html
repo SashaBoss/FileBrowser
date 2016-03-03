@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>File browser</title>
+    <!--CSS-->
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/app.css" rel="stylesheet" />
+    <link href="Content/toastr.min.css" rel="stylesheet" />
+    <link href="Content/handsontable/handsontable.full.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/toastr.js"></script>
+    <script src="Scripts/handsontable/handsontable.full.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="sidebar-nav">
+                    <div class="navbar navbar-default" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <span class="visible-xs navbar-brand">Sidebar menu</span>
+                        </div>
+                        <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="not-impl"><a href="#">New folder</a></li>
+                                <li class="not-impl"><a href="#">Add file</a></li>
+                                <li class="not-impl"><a href="#">Search</a></li>
+                            </ul>
+                        </div><!--/.nav-collapse -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <table id="fileTable" class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <td>N</td>
+                            <td>File/Folder name</td>
+                            <td>File size</td>
+                            <td>Modification date</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Dno.txt</td>
+                            <td>100MB</td>
+                            <td>20 marta</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Picty.txt</td>
+                            <td>140GB</td>
+                            <td>20 June</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="example2" class="hot handsontable htRowHeaders htColumnHeaders"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+        $('.not-impl').on('click', function () {
+            toastr.warning("Not implemented");
+        });
+
+        var
+        example2 = document.getElementById('example2'),
+        settings2,
+        hot2;
+
+        function getData() {
+            return [
+                ['', 'Kia', 'Nissan', 'Toyota', 'Honda', 'Mazda', 'Ford'],
+                ['2012', 10, 11, 12, 13, 15, 16],
+                ['2013', 10, 11, 12, 13, 15, 16],
+                ['2014', 10, 11, 12, 13, 15, 16],
+                ['2015', 10, 11, 12, 13, 15, 16],
+                ['2016', 10, 11, 12, 13, 15, 16]
+            ];
+        }
+
+        settings2 = {
+            data: getData(),
+            rowHeaders: true,
+            colHeaders: true,
+            contextMenu: ['row_above', 'row_below', 'remove_row']
+        };
+
+        hot2 = new Handsontable(example2, settings2);
+    });
+</script>
