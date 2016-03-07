@@ -1,0 +1,16 @@
+C:\Users\SashaBoss\Documents\FileBrowser\FileBrowser\bin\FileBrowser.dll.config
+C:\Users\SashaBoss\Documents\FileBrowser\FileBrowser\bin\FileBrowser.dll
+C:\Users\SashaBoss\Documents\FileBrowser\FileBrowser\bin\FileBrowser.pdb
+C:\Users\SashaBoss\Documents\FileBrowser\FileBrowser\bin\Dropbox.Api.dll
+C:\Users\SashaBoss\Documents\FileBrowser\FileBrowser\bin\Newtonsoft.Json.dll
+C:\Users\SashaBoss\Documents\FileBrowser\FileBrowser\bin\System.Net.Http.Formatting.dll
+C:\Users\SashaBoss\Documents\FileBrowser\FileBrowser\bin\System.Web.Http.dll
+C:\Users\SashaBoss\Documents\FileBrowser\FileBrowser\bin\System.Web.Http.WebHost.dll
+C:\Users\SashaBoss\Documents\FileBrowser\FileBrowser\bin\Dropbox.Api.xml
+C:\Users\SashaBoss\Documents\FileBrowser\FileBrowser\bin\Newtonsoft.Json.xml
+C:\Users\SashaBoss\Documents\FileBrowser\FileBrowser\bin\System.Net.Http.Formatting.xml
+C:\Users\SashaBoss\Documents\FileBrowser\FileBrowser\bin\System.Web.Http.xml
+C:\Users\SashaBoss\Documents\FileBrowser\FileBrowser\bin\System.Web.Http.WebHost.xml
+C:\Users\SashaBoss\Documents\FileBrowser\FileBrowser\obj\Debug\FileBrowser.csprojResolveAssemblyReference.cache
+C:\Users\SashaBoss\Documents\FileBrowser\FileBrowser\obj\Debug\FileBrowser.dll
+C:\Users\SashaBoss\Documents\FileBrowser\FileBrowser\obj\Debug\FileBrowser.pdb
